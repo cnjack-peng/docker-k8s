@@ -2,6 +2,8 @@ FROM alpine:3.7
 
 LABEL maintainer="Jack Peng <invclan@foxmail.com>"
 
+
+# docker build -t oracle-jre:1.0 .
 # Don't copy
 # COPY server-jre-8u171-linux-x64.tar.gz /usr/local
 
