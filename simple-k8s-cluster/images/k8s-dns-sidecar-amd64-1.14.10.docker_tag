@@ -1,1 +1,1 @@
-gcr.io/google_containers/k8s-dns-sidecar-amd64  1.14.10  8a7739f672b4
+docker tag 8a7739f672b4 gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.10  

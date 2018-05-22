@@ -1,1 +1,1 @@
-gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64  1.14.10  6816817d9dce
+6816817d9dce  gcr.io/google_containers/k8s-dns-dnsmasq-nanny-amd64:1.14.10  
