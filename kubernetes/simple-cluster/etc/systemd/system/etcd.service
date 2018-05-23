@@ -1,0 +1,23 @@
+[Unit]
+Description=ETCD Service
+After=network.target
+After=network-online.target
+Wants=network-online.target
+Documentation=https://github.com/coreos
+
+[Service]
+Type=notify
+TimeoutStartSec=0
+WorkingDirectory=/var/lib/etcd
+EnvironmentFile=
+ExecStart=/usr/bin/etcd \
+   --name=10.10.10.81 \
+  --listen-client-urls=http://10.10.10.81:2379,http://127.0.0.1:2379 \
+  --advertise-client-urls=http://10.10.10.81:2379 \
+  --data-dir=/var/lib/etcd
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
